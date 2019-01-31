@@ -1,0 +1,540 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+}
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+h3{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/*--------Home----------*/
+#home{
+    height:100%;
+}
+
+#home-cover{
+    height: 100%;
+    background-image: url("../img/cover.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner{
+    
+    display: table-cell;
+    vertical-align: middle;
+   /* text-align: center;*/
+}
+#home-heading h3{
+    
+    color: blue;
+    font-size: 55px;
+    font-weight: 800;
+    margin: 20px 0 20px 0;
+    
+}
+
+/*--------Parallax Effects-------*/
+.bg-parallax{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*-----Button------*/
+.btn-general{
+    border-color: antiquewhit;
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+
+.btn-white{
+    border-color: white;
+    color: black;
+    background-color: crimson;
+    font-weight:bold;
+}
+.btn-white:hover{
+    background-color: darkblue;
+    color:antiquewhite;
+}
+.btn-blue{
+    border-color: white;
+    color: black;
+    background-color:crimson;
+    font-weight: bold;
+}
+.btn-blue:hover{
+     background-color: darkblue;
+    color:antiquewhite;
+}
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    background-color: crimson;
+    color: black;
+    display: none;
+}
+.btn-back-to-top:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+/*-----Animation-------*/
+#home-cover{
+    animation-delay: .1s;
+    animation-duration: .4s;
+}
+#home-heading{
+     animation-delay: .5s;
+    animation-duration: .77s;
+}
+#home-btn{
+     animation-delay: .77s;
+    animation-duration: 1s;
+}
+
+
+/*------Content(generic)----------*/
+.content-box{
+    padding:60px 0 60px 0;
+    
+}
+.content-title h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+    
+}
+.content-title-white h3{
+    color: white;
+}
+
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    background-color:springgreen;
+    margin: 0 auto 30px auto;
+}
+/*-----------Services---------------*/
+.service-item
+{
+    padding:20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor:grab;
+}
+.service-item-icon{
+    color:forestgreen;
+    float: left;
+    padding: 15px;/*-----top right botton left all set to 15px-----*/
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon{
+    color: azure;
+    background-color: blue;
+}
+.service-item-title h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin:0 0 10px 0;
+}
+.service-item-desc p{
+    margin: 0;
+    padding-left: 85px;
+    
+}
+/*********************About Section*************************/
+#about-bg-diagonal{
+    width: 70%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/sl3.jpg);
+    border-left: 200px solid white;
+    border-top: 700px solid transparent;
+}
+#about-content-box{
+    float: left;
+    height: 700px;
+}
+#about-content-box-outer{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#about .content-title h3{   /***Targetting content title's h3***/
+    text-align:left;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+#about .content-title-underline{
+    margin: 0 0 30px 65px;
+}
+#about-paragraph p{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    width: 115%;
+}
+
+/************Work Section****************/
+.container-fluid {  /********Selects(*)all columns***********/
+    padding-left: 0;
+    padding-right: 0;  
+    /*************left and right space is removed***************/
+}
+.img-wrapper img{
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    transition: transform .5s ease;/*******For smooth zoom in effect**********/
+}
+.img-wrapper{
+    overflow: hidden;/**************overflow of image is stopped**************/
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);/**************Zoom in effect******************/
+    cursor: zoom-in;/************Zoom in magnifying button************/
+}
+
+/*********************Team**************************/
+.team-member{
+    margin: 0 15px;
+}
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+h4.team-member-name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation{
+    color:blue;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+} 
+
+/**************Social-section********************/
+.social-list{
+    padding-left: 0;
+}
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.social-icon i{
+    font-size: 17px;
+}
+.icon-gray i{
+    color:crimson;
+}
+.icon-gray i:hover{
+    color:blue;
+}
+.icon-white i{
+    color: crimson;
+}
+.icon-white i:hover{
+    color: red;
+}
+/*********************Testimonials****************/
+#testimonials-cover{
+    background-image: url("../img/bg2.jpg");
+}
+#testimonials .content-box{
+    background-color: rgba(0,0,0,0.7);/*contrast of image*/
+}
+#customers-testimonials{
+    padding: 50px 0;
+}
+.testimonial img{
+    max-width: 240px;
+    margin: 0 auto 0 auto;
+}
+.testimonial blockquote{
+    border: 0;
+    font-family:sans-serif;
+    font-style: italic;
+    padding: 6px 150px;
+    color: white;
+    position: relative;
+}
+.testimonial blockquote p{
+    color: white;
+}
+
+
+.testimonial blockquote::before,
+.testimonial blockquote::after{
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before{  /**before quotation*****/
+    content: "\201C";
+    top: 0;
+    left: 128px;
+}
+.testimonial blockquote::after{  /******after quotation******/
+    content: "\201D";
+    bottom: 0;
+    right: 198px;
+}
+
+.testimonial-author p{
+    color: white;
+    font-size: 17px;
+}
+.testimonial-author p strong{
+    display: block;
+}
+
+/*************Pricing*******************/
+.pricing-box{
+    border: 3px solid blue;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+h4.pricing-title{
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 7px 15px 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+h3.pricing-value sup{
+    font-size: 20px;
+    font-weight: normal;
+    vertical-align: super;
+}
+ul.pricing-spec{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+ul.pricing-spec li p{
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.pricing-box-lg{
+    padding: 90px 0;
+    margin: 0;
+    background-color: deepskyblue;
+}
+.pricing-box-lg h4.pricing-title{
+    background-color: white;
+    color: black;
+    font-weight:800;
+}
+.pricing-box-lg ul.pricing-spec li p{
+    color:white;
+}
+.content-box{
+    padding: 6px 0 10px 0;
+}
+/*********************Stats******************/
+#stats-cover{
+    background-image: url("../img/bg1.jpg");
+}
+#stats .content-box{
+    background-color: rgba(0,0,0,0.5);
+}
+.stats-item{
+    padding: 100px 0;
+}
+.stats-item i{
+    color: blue;
+}
+.stats-item h2{
+    color:white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    
+}
+.stats-item p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300px;
+    margin-top: 0;
+}
+/************Clients*********************/
+.client{
+    padding: 40px 0;
+}
+
+/**************Contact-section***************/
+
+
+    /**********left-side***************/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.3);
+    border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+#contact-left h3{
+    color: crimson;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#contact-left p{
+    color:white;
+    margin-bottom: 30px;
+}
+#contact-info{
+    background-image: url("../img/bg3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+address{
+    color: white;
+}
+address strong, 
+#phone-fax-email strong{
+    letter-spacing: 1px;
+    color: crimson;
+}
+  /***********Right-side****************/
+#contact-right h3{
+    color: crimson;
+}
+form .form-control{
+    background: transparent;
+    border-radius: 0.5;
+    border-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    
+}
+
+  /***********Copyrights********************/
+#footer-bottom {
+    background-color: rgba(0,0,0,0.1);
+    padding: 80px 0;
+    margin-top: 60px;
+    height: 15%;
+    
+}
+#footer-copyrights p{
+    margin: 0;
+    color: crimson;
+    font-weight: 700;
+}
+#footer-menu{
+    float:right;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+#footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+#footer-menu ul li{
+    display: inline-blocK;
+}
+#footer-menu a{
+    color: crimson;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 5px;
+    text-decoration: none;
+}
+#footer-menu a:hover{
+    color: blue;
+}
+/****************Navigation bar************/
+.navbar {
+    transition: all .5s ease-in-out;
+}
+.mak-top-nav{
+    background: rgba(0,0,0,0.7);
+    padding: 7px 0;
+}
+.navbar-nav > li > a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: crimson!important;
+    text-align:right;
+    font-weight: 900;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+    background: none;
+    color: blue!important;
+}
+.navbar-toggler{
+    background-color: rgba(0,0,0,0) !important;
+    margin-right: 27px;
+    padding:0 0 0 0 !important;
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-color:crimson;
+}
+.mak-top-nav ul.navbar-nav > li.nav-item > .nav-link.active{
+    color:blue !important;
+}
+
+
